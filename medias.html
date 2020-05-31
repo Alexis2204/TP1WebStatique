@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            table, th, td {border: 1px solid;}
+        </style>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <title> Titre </title>
+    </head>
+    <body>
+        <div id="menu">
+            <p>
+                <a href="textlistforms.html">Textes&amp;Listes&amp;Formulaires</a>|
+
+                <a href="tables.html">Tableaux</a>|
+
+                <a href="media.html">Média</a>
+            </p>
+            <hr>
+        </div>
+        <div id="Som">
+            <ol>
+                <li><a href="#img">Images</a></li>
+                <li><a href="#vid1">Vidéo 1</a></li>
+                <li><a href="#vid2">Vidéo 2</a></li>
+                <li><a href="#aud">Audio</a></li>
+                <li><a href="#ifr">Iframe</a></li>
+            </ol>
+        </div>
+        <hr>
+        <h1>Manipulation des médias en HTML</h1>
+        <h2 id="img">Images <span class="material-icons">insert_photo</span></h2>
+        <table>
+            <tr>
+                <td rowspan="2"><img src="images\nantes.jpg" alt="Erreur" width="100" height="80"></td>
+                <td><a href="https://isen-nantes.fr/"> 
+                    <svg width="200" height="200">
+                    <rect x="30" y="80" width="60" height="60" style="fill:green" />
+                    </svg> 
+                    </a>
+                </td>
+                <td><img src="images\nantes.jpg" alt="Erreur" width="100" height="80"></td>
+            </tr>
+            <tr>
+                <td><svg height="60" width="200">
+                    <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Non disponible</text>
+                  </svg></td>
+                <td><img src="images\nantes.jpg" alt="Erreur" width="100" height="80"></td>
+            </tr>
+        </table>
+        <h2 id="vid1">Vidéo avec la balise &lt;iframe&gt;<span class="material-icons">movie</span></h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7gwK1dcz0IU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <h2 id="vid2">Vidéo avec la balise &lt;video&gt;<span class="material-icons">movie</span></h2>
+        <video width="320" height="240" controls>
+            <source src="vidéos/windtunnel.mp4" type="video/mp4">
+            <source src="vidéos/windtunnel.ogg" type="video/ogg">
+            <source src="vidéos/windtunnel.webm" type="video/webm">
+            </video>            
+        <br>
+        <h2 id="aud">Audio<span class="material-icons">audiotrack</span></h2>
+        <audio controls>
+            <source src="audios/audio.mp3.m4a" type="audio/mp3">
+            </audio>
+            
+        <br>
+        <h2 id="ifr">Iframe<span class="material-icons">insert_link</span> <a href="https://isen-nantes.fr/" target="iframe_isen">Cliquer ici</a></h2>
+        <iframe width="600" height="600" name="iframe_isen"></iframe>
+
+    </body>
+</html>

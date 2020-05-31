@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title> Titre </title>
+    </head>
+    <body>
+        <div id="menu">
+            <p>
+                <a href="textlistforms.html">Textes&amp;Listes&amp;Formulaires</a>|
+
+                <a href="tables.html">Tableaux</a>|
+
+                <a href="media.html">Média</a>
+            </p>
+        </div>
+        <hr>
+        <div id="Som">
+            <ul>
+                <li><u>Etudiant</u></li>
+                <li><u>Enseignant</u></li>
+                <li><u>Abbréviations</u></li>
+            </ul>
+        </div>
+        <hr>
+        <div id="liste">
+            <ul>
+                <li><h3>Etudiant</h3>
+                    <br>
+                    <form action="textlistforms.html" method="get">
+                        Prénom: <input type="text" name="prenom">
+                        Nom: <input type="text" name="nom">
+                        <br>
+                        Année d'études: <input type="radio" name="annee" value="1a"> 1A <input type="radio" name="annee" value="2a"> 2A
+                        <br>
+                        Remarque:
+                        <br>
+                        <textarea name="remarque" cols="50" rows="5"></textarea>
+                        <br>
+                        <input type="submit">
+                    </form>
+                <hr>
+                </li>
+                <li><h3>Enseignant</h3>
+                    <br>
+                    <form action="textlistforms.html" method="POST">
+                        Prénom:
+                        <br>
+                        <input type="text" name="prenom">
+                        <br>
+                        Nom:
+                        <br>
+                        <input type="text" name="nom">
+                        <br>
+                        Site:
+                        <br>
+                        <select name="site">
+                            <option>Brest</option>
+                            <option>Nantes</option>
+                            <option>Rennes</option>
+                        </select>
+                        <br>
+                        Mot de passe:
+                        <br>
+                        <input type="password">
+                    </form>
+                    <hr>
+                </li>
+                <li><h3>Abbréviations</h3>
+                    <dl>
+                        <dt> <b>ISEN</b><br></dt>
+                        <dd>Institut Supérieur de l'Electronique et du Numérique<br></dd>
+                        <dt><b>HTML</b><br></dt>
+                        <dd>HyperText Markup Language</dd>
+                    </dl>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
